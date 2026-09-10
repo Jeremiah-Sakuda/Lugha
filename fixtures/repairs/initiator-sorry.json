@@ -1,0 +1,17 @@
+{
+  "name": "initiator-sorry",
+  "description": "Other speaker says 'sorry?' right after the wearer.",
+  "patterns": ["initiator"],
+  "wearerSpeaker": "speaker_1",
+  "transcript": {
+    "conversationId": "fx-initiator-sorry",
+    "utterances": [
+      { "id": "u1", "speaker": "speaker_1", "text": "I go to the doctor yesterday.", "ts": 1000 },
+      { "id": "u2", "speaker": "speaker_2", "text": "Sorry?", "ts": 2000 },
+      { "id": "u3", "speaker": "speaker_1", "text": "I went to the doctor yesterday.", "ts": 3000 }
+    ]
+  },
+  "expected": [
+    { "pattern": "initiator", "wearerUtteranceIds": ["u1"] }
+  ]
+}

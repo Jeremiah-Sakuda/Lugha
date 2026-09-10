@@ -1,0 +1,16 @@
+{
+  "name": "negative-plain-conversation",
+  "description": "A short exchange with no repair. Nothing should be flagged.",
+  "patterns": ["initiator", "rephrase", "self-correction", "restart"],
+  "wearerSpeaker": "speaker_1",
+  "transcript": {
+    "conversationId": "fx-negative-plain",
+    "utterances": [
+      { "id": "u1", "speaker": "speaker_1", "text": "Good morning, I have an appointment at ten.", "ts": 1000 },
+      { "id": "u2", "speaker": "speaker_2", "text": "Sure, what's your last name?", "ts": 2000 },
+      { "id": "u3", "speaker": "speaker_1", "text": "Okafor.", "ts": 3000 },
+      { "id": "u4", "speaker": "speaker_2", "text": "Great, take a seat and we'll call you.", "ts": 4000 }
+    ]
+  },
+  "expected": []
+}
