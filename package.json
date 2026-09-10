@@ -1,0 +1,23 @@
+{
+  "name": "lugha",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Turns the English you struggled with today into the lesson you remember tomorrow.",
+  "license": "MIT",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "bee:doctor": "tsx scripts/bee-doctor.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
