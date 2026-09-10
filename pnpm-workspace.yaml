@@ -3,3 +3,7 @@ packages:
   - apps/*
 allowBuilds:
   esbuild: set this to true or false
+
+# build scripts allowed to run on install (pnpm blocks all others)
+onlyBuiltDependencies:
+  - esbuild
