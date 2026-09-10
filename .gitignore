@@ -1,0 +1,25 @@
+# dependencies and builds
+node_modules/
+.next/
+dist/
+coverage/
+*.tsbuildinfo
+
+# secrets and local state
+.env
+.env.*
+!.env.example
+data/
+*.jsonl
+!fixtures/**/*.jsonl
+
+# real transcripts, eval sets, consent forms never enter the repo
+eval/
+consent/
+
+# every hidden directory except the workflows folder (editor and assistant config, INV-6)
+.*/
+!.github/
+
+# os
+.DS_Store
