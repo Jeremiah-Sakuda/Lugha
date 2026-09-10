@@ -21,6 +21,25 @@ Format:
 
 **Did.** PRD committed as-is. Decisions D1 and D3 proposed with rationale, pending day-one verification on the device. Sprint plan written down to the commit. Repository scaffolded with license, ignore rules, working rules.
 
-**Result.** Repository ready for the first commits. `bee` CLI not yet installed on the build machine; that is the first task of day 2.
+**Did, later the same day.** pnpm workspace, CI, bee doctor script, `repairs` package scaffold with types, synthetic fixture format and loader, text normalization. Design system generated with the UI skill and hand-reviewed (its first pass was a children's style; replaced).
+
+**Commands and output.**
+
+```
+$ npm install -g @beeai/cli
+$ pnpm bee:doctor
+[ok] installed: bee version
+    @beeai/cli 0.7.3
+[fail] authenticated: bee status
+    API: production (https://app-api-developer.ce.bee.amazon.dev/)
+    Not logged in.
+[ok] reachable: bee ping --count 1
+    pong
+$ pnpm test
+ Test Files  3 passed (3)
+      Tests  15 passed | 2 skipped (17)
+```
+
+**Result.** CLI 0.7.3 installed and reachable. Not yet logged in; that needs Developer Mode on the phone and is the first task of day 2, followed by the day-one capture (C0.10).
 
 **Plan change.** none
